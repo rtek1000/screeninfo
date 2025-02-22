@@ -8,7 +8,7 @@ print('width:', dict1.get('width'))
 def get_screen(is_primary=True):
     for m1 in screeninfo.get_monitors():
         dict1 = m1.__dict__
-        print(dict1)
+        # print(dict1)
         if is_primary == True and dict1.get('is_primary') == True:
             return dict1
         elif is_primary == False and dict1.get('is_primary') == False:
